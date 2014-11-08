@@ -51,7 +51,7 @@
 					<tr>
 						<td class="balance">Balance (GBP)</td>
 						<td />
-						<td class="balance">0.00</td>
+						<td class="balance">${balance}</td>
 						<td />
 					</tr>
 				</table>

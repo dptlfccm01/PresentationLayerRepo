@@ -21,11 +21,13 @@ public class MenuController {
 	@RequestMapping("/viewAllTransactions.html")
 	public ModelAndView viewAllTransactionsPage(MainTransactionManager mtm){
 		ModelAndView model = new ModelAndView("ViewAllTransactions");
+		double balance = mtm.getBalance();
 		List<Transaction> tlist = mtm.getAllTransactions();
 		for(Iterator<Transaction> it = tlist.iterator(); it.hasNext();){
 			System.out.println("OUT> "+it.next().getDescription());
 		}
 		model.addObject("transactionList", tlist);
+		model.addObject("balance", balance);
 		return model;
 	}
 	
