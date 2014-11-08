@@ -30,6 +30,7 @@
 		<form method="post" action="/PresentationLayerTest/success.html">
 			<fieldset>
 				<legend>Add Transaction</legend>
+				<div class="table-responsive">
 				<table>
 					<tr>
 						<td>Description : </td><td><input type="text" name="description" /></td>
@@ -51,6 +52,7 @@
 						<td><input type="submit" name="submit" value="Add Transaction" /></td><td />
 					</tr>
 				</table>
+				</div>
 			</fieldset>
 		</form>
 	</body>

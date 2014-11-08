@@ -16,6 +16,9 @@
 				width : 75%;
 				margin : 0 auto;
 			}
+			.balance {
+				font-weight : bold;
+			}
 		</style>
 	</head>
 	<body>
@@ -29,7 +32,8 @@
 		<form method="post" action="">
 			<fieldset>
 			<legend>View All Transactions</legend>
-				<table class="table table-bordered table-hover table-responsive">
+			<div class="table-responsive">
+				<table class="table table-bordered table-hover">
 					<thead>
 						<th>Transaction ID</th>
 						<th>Description</th>
@@ -45,12 +49,13 @@
 						</tr>
 					</c:forEach>
 					<tr>
-						<td>Balance (GBP)</td>
+						<td class="balance">Balance (GBP)</td>
 						<td />
+						<td class="balance">0.00</td>
 						<td />
-						<td>0.00</td>
 					</tr>
 				</table>
+				</div>
 			</fieldset>
 		</form>
 	</body>
